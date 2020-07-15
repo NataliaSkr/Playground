@@ -1,0 +1,132 @@
+@import 'libs/smart-grid.less';
+@import 'libs/vars.less';
+@import 'libs/mixins.less';
+
+/* Set defaults */
+
+html,
+body{
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: inherit;
+}
+
+body{
+	font-family: 'Montserrat', 'Open Sans', 'Arial', sans-serif;
+	max-width: 1920px;
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: @fontNormal;
+	line-height: 1.2;
+}
+
+.btn-reset{
+	appearance: none;
+  	border-radius: 0;
+  	opacity: 1;
+	border: none;
+	background-color: transparent;
+	font: inherit;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	height: 5px;
+	background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 2px;
+	background-color: @scrollColor;
+}
+
+.ul-reset{
+	list-style: none;
+}
+
+.input{
+	font: inherit;
+	appearance: none;
+	opacity: 1;
+	transition: @transT;
+	&:focus{
+		outline: none;
+		box-shadow: 1px 1px 30px 1px rgba(60,86,166, 0.3);
+	}
+}
+
+img,
+video{
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* Atomic */
+
+.d-n{
+	display: none;
+}
+
+.d-b{
+	display: block;
+}
+
+.d-f{
+	display: flex;
+}
+
+.ttu{
+	text-transform: uppercase;
+}
+
+.ta-c{
+	text-align: center;
+}
+
+.ov-h{
+	overflow: hidden;
+}
+
+.ov-s{
+	overflow: scroll;
+}
+
+.black{
+	color: #000;
+}
+
+/* Global */
+
+.wrapper{
+	.wrapper();
+}
+
+.row{
+	.row-flex();
+}
+
+.col{
+	.col();
+}
+
+.sr-only{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* General */

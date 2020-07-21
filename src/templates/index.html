@@ -25,16 +25,10 @@
     <h2 class="services__h">
         Список услуг
     </h2>
+        {% set services = ['Обучение' , 'Консультация' , 'Код ревью' ] %}
         <ul class="services_list,list">
-            <li class="list">
-                Обучение
-            </li>
-            <li class="list">
-                Консультация
-            </li>
-            <li class="list">
-                Код ревью
-            </li>
+            {% for service in services %}
+            <li class="list">{{service}}</li>
         </ul>
         <p class="services__text">Всё на высшем уровне</p>
  </section>

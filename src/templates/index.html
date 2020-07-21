@@ -5,11 +5,12 @@
 
 {% include 'parts/_header.html' %}
 
-
- <h1>School Ofpery.</h1>
- <a href="index.html">
-    <img width="100" src="parts/logo-ofpery.svgo" alt="Знак школы - зеленый листик">
- </a>
+ <main> 
+    
+    {% include 'parts/svgo/logo-ofpery.svg' %}
+    
+ <h1> Главная </h1>
+ <nav>
     <p>Навигация сайта</p>
     <ul>
         <li>
@@ -19,6 +20,23 @@
            <a href="prices.html"> Прайс цен.</a>
         </li>
     </ul>
-    
+ </nav>
+ <section class="services">
+    <h2 class="services__h">
+        Список услуг
+    </h2>
+        <ul class="services_list">
+            <li class="list__item">
+                Обучение
+            </li>
+            <li class="list__item">
+                Консультация
+            </li>
+            <li class="list__item">
+                Код ревью
+            </li>
+        </ul>
+ </section>
+ </main>
 
 {% include 'parts/_foot.html' %}

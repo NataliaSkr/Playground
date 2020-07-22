@@ -5,22 +5,8 @@
 
 {% include 'parts/_header.html' %}
 
- <main> 
-    
-    {% include 'parts/svgo/logo-ofpery.svg' %}
-    
+ <main>  
  <h1> Главная </h1>
- <nav>
-    <p>Навигация сайта</p>
-    <ul>
-        <li>
-           <a href="schedute.html">Рассписание.</a> 
-        </li>
-        <li>
-           <a href="prices.html"> Прайс цен.</a>
-        </li>
-    </ul>
- </nav>
  <section class="services">
     <h2 class="services__h">
         Список услуг
@@ -29,6 +15,7 @@
         <ul class="services_list,list">
             {% for service in services %}
             <li class="list">{{service}}</li>
+        {% endfor %}    
         </ul>
         <p class="services__text">Всё на высшем уровне</p>
  </section>

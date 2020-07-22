@@ -1,50 +1,47 @@
-@import 'libs/smart-grid.less';
-@import 'libs/vars.less';
-@import 'libs/mixins.less';
+@import "libs/smart-grid.less";
+@import "libs/vars.less";
+@import "libs/mixins.less";
 
 /* Set defaults */
 
 html,
-body{
-	box-sizing: border-box;
+body {
+  box-sizing: border-box;
 }
 
 .main-header {
-	padding: 10px;
-	
-	&__logo{
-		width: 100px;
-		color: red;
-	}
-	
+  padding: 10px;
+
+  &__logo {
+    width: 100px;
+  }
 }
-.active {
-	color: hover;
+.active:hover {
+  color: red;
 }
- .services {
-	background-color: @mainColor;
-	color: #111;
-	padding: 10px;
+.services {
+  background-color: @mainColor;
+  color: #111;
+  padding: 10px;
 
+  &__h {
+    width: 30px;
+    padding-bottom: 30px;
+  }
+  &_list {
+    padding-bottom: 30px;
+    color: #330000;
+  }
+  &_text {
+    size: 20px;
+  }
+}
+.list {
+  padding-bottom: 30px;
+  color: #330000;
 
-		&__h {
-			width: 30px;
-			padding-bottom: 30px;
-		}
-		&_list {
-			padding-bottom: 30px;
-			color: #330000;
-		}
-		&_text {
-			size: 20px;
-		}
-
- }
- .list {
-		padding-bottom: 30px
-		color: #330000;
-
-		&__item {
-			padding: 10px;
-		}
- }
+  &__item {
+    padding: 10px;
+    list-style: none;
+  }
+}

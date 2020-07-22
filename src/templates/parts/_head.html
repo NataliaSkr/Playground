@@ -22,15 +22,8 @@
       </svg>
 
       <nav>
-		{% set menuLinks = [
-			 { link: 'schedule.html' 
-			   text: 'Расписание' 
-			} 
-			{
-			   link: 'prices.html'
-			   text: 'Цены' } 
-			] 
-		%}
+        {% set menuLinks = [ { link: 'schedule.html' text: 'Расписание' } {
+        link: 'prices.html' text: 'Цены' } ] %}
         <ul>
           {% for link in menuLinks %}
           <li class="active">

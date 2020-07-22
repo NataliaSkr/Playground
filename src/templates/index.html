@@ -1,14 +1,26 @@
-{% set title = 'Главная' %}
+
+{% set title="Главная" %}
+
+{% set type = 'index' %} 
+
 {% include 'parts/_head.html' %}
 
+{% include 'parts/_header.html' %}
 
-    <header class="main-header"> Шапка </header>
-   <main>
-       
-   </main>
-   <footer class="main-footer"></footer> 
-</body>
-</html>
+ <main>  
+ <h1> Главная </h1>
+ <section class="services">
+    <h2 class="services__h">
+        Список услуг
+    </h2>
+        {% set services = ['Обучение' , 'Консультация' , 'Код ревью' ] %}
+        <ul class="services_list,list">
+            {% for service in services %}
+            <li class="list">{{service}}</li>
+        {% endfor %}    
+        </ul>
+        <p class="services__text">Всё на высшем уровне</p>
+ </section>
+ </main>
 
-
-
+{% include 'parts/_foot.html' %}

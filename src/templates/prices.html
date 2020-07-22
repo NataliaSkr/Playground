@@ -1,11 +1,48 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Цены</title>
-</head>
-<body>
+{% set title="Прайс" %}
+
+{% set type = 'prices' %}
+
+{% include 'parts/_head.html' %}
+
+{% include 'parts/_header.html' %}
+
+<main>
+<h1>Прайс цен.</h1>
     
-</body>
-</html>
+ <table border="2">
+     <thead>
+            <tr>
+                <td>
+                    Услуга
+                </td>
+                <td>
+                    Период
+                </td>
+                <td>
+                    Стоимость
+                </td>
+            </tr>
+     </thead>
+     <tbody>
+        <tr> 
+           <td>Курсы</td>
+           <td>60 дней</td>
+           <td>20000 руб</td> 
+        </tr>
+        <tr> 
+            <td>Консультация</td>
+            <td>1 час</td>
+            <td>500 руб</td>
+        </tr>
+        <tr> 
+            <td>Код ревью</td>
+            <td>1 раз</td>
+            <td>500 руб</td>
+        </tr>
+     </tbody>
+ </table>
+<p>PS: все совпадения случайны,цены и услуги придуманы.</p>
+</main>
+
+
+{% include 'parts/_foot.html' %}
